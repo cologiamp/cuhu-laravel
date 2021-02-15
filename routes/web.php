@@ -24,7 +24,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::post('/', [LoginController::class, 'signin']);
 
-Route::get('/logout', [LogoutController::class, 'signout']);
+Route::get('/logout', [LogoutController::class, 'signout'])->name('logout');
 
 Route::get('/secure', function () {
     return view('secure');
