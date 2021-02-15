@@ -12,6 +12,7 @@ __Ignacio Giampaoli__
 - Create a MySQL Database named `laravelskills`
 - `php artisan migrate`
 - `php artisan serve`, running at localhost:8000
+- User email to login: test@test.com, password: password
 
 __Cuhu Instructions__
 
