@@ -10,8 +10,8 @@ __Ignacio Giampaoli__
 - Copy `.env.example` to `.env` 
 - Set `.env`: DB_DATABASE=laravelskills, DB_USERNAME=root or your local username, DB_PASSWORD=(empty) or your local password.
 - Create a MySQL Database named `laravelskills`
-- Lastly, run `php artisan migrate`
-
+- `php artisan migrate`
+- `php artisan serve`, running at localhost:8000
 
 __Cuhu Instructions__
 
