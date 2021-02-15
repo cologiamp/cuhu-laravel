@@ -6,9 +6,13 @@
             </h2>
         </div>
         <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-            @include('components.article')
-            @include('components.article')
-            @include('components.article')
+            @if ($posts->count())
+                @include('components.article', ['posts' => $posts])
+            @else
+            
+                <p>THERE ARE NO POSTS</p>
+            
+            @endif
         </div>
     </div>
 </div>

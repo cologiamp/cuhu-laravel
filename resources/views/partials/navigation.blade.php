@@ -7,10 +7,10 @@
                 </div>
                 <div class="ml-10">
                     <div class="flex space-x-4">
-                        <a href="/" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="/secure" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Secure Page</a>
+                        <a href="{{ route('home') }}" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="{{ route('secure') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Secure Page</a>
                         @auth
-                        <a href="/logout" class="float-right text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Logout</a>
+                        <a href="{{ route('logout') }}" class="float-right text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Logout</a>
                         @endauth
                     </div>
                 </div>
