@@ -3,7 +3,7 @@
         @auth
         <div>
             <h2 class="text-center text-3xl font-extrabold text-gray-900">
-                Hi, you are signed in.
+                Hi {{ auth()->user()->name }}, you are signed in.
             </h2>
         </div>
         @endauth

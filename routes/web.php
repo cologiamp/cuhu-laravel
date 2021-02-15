@@ -25,4 +25,4 @@ Route::get('/logout', [LogoutController::class, 'signout']);
 
 Route::get('/secure', function () {
     return view('secure');
-})->name('secure');
+})->name('secure')->middleware('auth');
