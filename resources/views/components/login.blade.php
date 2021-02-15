@@ -1,5 +1,13 @@
 <section class="flex items-center justify-center bg-gray-50 md:py-36 sm:py-24 px-4 sm:px-6 lg:px-8">
     <div class="max-w-md w-full">
+        @auth
+        <div>
+            <h2 class="text-center text-3xl font-extrabold text-gray-900">
+                Hi, you are signed in.
+            </h2>
+        </div>
+        @endauth
+        @guest
         <div>
             <h2 class="text-center text-3xl font-extrabold text-gray-900">
                 Sign in to access secure page
@@ -43,5 +51,6 @@
                 </button>
             </div>
         </form>
+        @endguest
     </div>
 </section>

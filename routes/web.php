@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::post('/', [LoginController::class, 'signin']);
+
+Route::get('/logout', [LogoutController::class, 'signout']);
 
 Route::get('/secure', function () {
     return view('secure');
