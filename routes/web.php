@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 
@@ -14,14 +15,16 @@ use App\Http\Controllers\Auth\LogoutController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('home');
 })->name('home');
+*/
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::post('/', [LoginController::class, 'signin']);
 
-Route::get('/logout', [LogoutController::class, 'signout']);
+Route::get('/logout', [LogoutController::class, 'signout'])->name('logout');
 
 Route::get('/secure', function () {
     return view('secure');
