@@ -6,7 +6,9 @@ __Ignacio Giampaoli__
 ## Install
 
 - `git clone https://github.com/cologiamp/cuhu-laravel`
-- `composer install`
+- Once inside 'cuhu-laravel' directory, `composer install`
+- `npm install`
+- `npm run dev`
 - Copy `.env.example` to `.env` 
 - Set `.env`: DB_DATABASE=laravelskills, DB_USERNAME=root or your local username, DB_PASSWORD=(empty) or your local password.
 - Create a MySQL Database named `laravelskills`
