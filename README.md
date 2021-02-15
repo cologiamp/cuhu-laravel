@@ -1,4 +1,19 @@
-# Laravel Based Skills Test 👾
+# Ignacio Giampaoli - Laravel Based Skills Test 👾
+
+__Ignacio Giampaoli__
+
+
+## Install
+
+- `git clone https://github.com/cologiamp/cuhu-laravel`
+- `composer install`
+- Copy `.env.example` to `.env` 
+- Set `.env`: DB_DATABASE=laravelskills, DB_USERNAME=root or your local username, DB_PASSWORD=(empty) or your local password.
+- Create a MySQL Database named `laravelskills`
+- Lastly, run `php artisan migrate`
+
+
+__Cuhu Instructions__
 
 ![Cuhu](https://s3.eu-west-2.amazonaws.com/cdn.cuhu.co.uk/app/uploads/2021/02/15140001/cuhu.jpg)
 
